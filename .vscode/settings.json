@@ -1,0 +1,71 @@
+{
+    "workbench.sideBar.location": "right",
+    "editor.minimap.enabled": false,
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true, // text will format on pasting the code
+    "editor.fontFamily": "VictorMono NF Italic",
+    "editor.fontLigatures": true,
+    "explorer.compactFolders": false,
+    "editor.fontWeight": "300",
+    "editor.fontSize": 14,
+    "editor.tokenColorCustomizations": {
+    "textMateRules": [
+    {
+      "scope": [
+        //following will be in italic (=FlottFlott)
+        "comment",
+        "entity.name.type.class", //class names
+        "keyword", //import, export, return…
+        "constant", //String, Number, Boolean…, this, super
+        "storage.modifier", //static keyword
+        "storage.type.class.js", //class keyword
+        "entity.name.method.js",
+        "entity.name.class.js",
+        "entity.name.tag.doctype",
+        "entity.other.attribute-name",
+        "entity.other.attribute-name.tag.jade",
+        "entity.other.attribute-name.tag.pug",
+      ],
+      "settings": {
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "scope": [
+        //following will be excluded from italics (VSCode has some defaults for italics)
+        "invalid",
+        "keyword.operator",
+        "constant.numeric.css",
+        "keyword.other.unit.px.css",
+        "constant.numeric.decimal.js",
+        "constant.numeric.json"
+      ],
+      "settings": {
+        "fontStyle": ""
+      }
+    }
+    ]
+    },
+    "code-runner.runInTerminal": true,
+    "code-runner.ignoreSelection": true,
+    "code-runner.executorMap": {
+        "python": "C:\\Users\\clldu\\OneDrive\\my_repos\\personal\\series\\pyagenda\\pyagd\\Scripts\\python.exe"
+    },
+    // Python
+    "editor.formatOnType": true,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.ruff": true,
+        "source.organizeImports.ruff": true
+    },
+    //Terminal settings
+    "terminal.integrated.fontFamily": "VictorMono Nerd Font", // terminal font to use icons
+    "terminal.integrated.fontWeight": "normal",
+    "terminal.integrated.minimumContrastRatio": 1,
+    "terminal.integrated.shellIntegration.enabled": false,
+    "terminal.integrated.shellIntegration.decorationsEnabled": "never",
+    "terminal.integrated.fontSize": 14, // terminal font size
+    "terminal.integrated.sendKeybindingsToShell": true,
+    "explorer.confirmDelete": false,
+    //Debbuging
+    "jupyter.interactiveWindow.textEditor.executeSelection": true
+} 

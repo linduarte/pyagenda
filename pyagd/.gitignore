@@ -1,0 +1,8 @@
+# created by virtualenv automatically
+.vscode/settings.json
+etc
+Lib
+Scripts
+Share
+pyvenv.cfg
+requirements.txt
